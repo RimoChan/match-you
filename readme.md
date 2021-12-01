@@ -12,7 +12,7 @@
 
 
 > A. 忍气吞声，自己去配环境。
-> 
+>
 > B. 使用莉沫酱最新发明的工具「您配吗」快速解决问题！
 
 
@@ -29,12 +29,14 @@
 
 因为我平时上班用的是Python，所以就先写了一个Python的版本，大家一起来提交代码，把所有工具的依赖统统删掉吧！
 
-目录: 
+目录:
 
 - Python - pip
     - mother.py
     - mother.sh
     - father.py
+- Python - conda
+    - conda.py
 - C# - NuGet
     - nuget.cs
 - java - Gradle
