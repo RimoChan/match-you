@@ -28,3 +28,27 @@
 ## 大家一起来写吧！
 
 因为我平时上班用的是Python，所以就先写了一个Python的版本，大家一起来提交代码，把所有工具的依赖统统删掉吧！
+
+目录: 
+
+- Python - pip
+    - mother.py
+    - mother.sh
+    - father.py
+- C# - NuGet
+    - nuget.cs
+- java - Gradle
+    - mother.java
+- Swift
+    - mother.swift
+- Swift - CocoaPods
+    - cocoapods.swift
+- Golang
+    - mother.go
+- kotlin - Gradle
+    - mother.kt
+- Node.js - npm
+    - mother.js
+    - grandmother.js
+
+以及不要忘了，我们的目标是把已有的依赖清干净，而不是把环境搞得更坏，因此别删像是配置文件之类的……
