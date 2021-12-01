@@ -35,6 +35,7 @@
     - mother.py
     - mother.sh
     - father.py
+    - python/conda.py
 - C# - NuGet
     - nuget.cs
 - java - Gradle
