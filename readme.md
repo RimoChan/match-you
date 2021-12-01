@@ -31,11 +31,12 @@
 
 目录:
 
-- Python - pip & conda
+- Python - pip
     - mother.py
     - mother.sh
     - father.py
-    - python/conda.py
+- Python - pip
+    - conda.py
 - C# - NuGet
     - nuget.cs
 - java - Gradle
