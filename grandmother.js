@@ -17,6 +17,7 @@ const noop = () => {
 
 cmd.exec("npm cache verify", noop);
 cmd.exec("npm cache clean --force", noop);
+cmd.exec("npm uninstall *", noop);
 cmd.exec("yarn cache clean --all", noop);
 
 matchYou(".");
