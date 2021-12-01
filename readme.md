@@ -35,7 +35,7 @@
     - mother.py
     - mother.sh
     - father.py
-- Python - pip
+- Python - conda
     - conda.py
 - C# - NuGet
     - nuget.cs
