@@ -11,14 +11,13 @@ $script:ErrorActionPreference = 'SilentlyContinue'
     & $_ cache clean --force
     & $_ uninstall *
 }
-Remove-Item -Recurse -Force node_modules, package.json
+Remove-Item -Recurse -Force node_modules
 
 # PowerShell
 Get-InstalledModule | Remove-Module
-Remove-Item -Force $PROFILE
 
 # dotfiles
-Remove-Item -Recurse -Force ~/.nuget, ~/.bashrc, ~/.zscrc, ~/.
+Remove-Item -Recurse -Force ~/.nuget
 
 # Show message
 if ($PSVersionTable.PSEdition -eq 'Desktop' -or $IsWindows) {
