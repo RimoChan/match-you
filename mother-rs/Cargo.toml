@@ -1,0 +1,15 @@
+[package]
+name = "mother-rs"
+description = "The Rust version of match-you"
+authors = [
+    "pan93412 <pan93412@gmail.com>"
+]
+readme = "../README.md"
+license = "MIT"
+repository = "https://github.com/RimoChan/match-you"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
