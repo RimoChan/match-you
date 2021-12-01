@@ -1,0 +1,21 @@
+{
+  "name": "mother-ts",
+  "description": "The TypeScript version of match-you",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/RimoChan/match-you",
+  "author": "pan93412",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "prettier": "^2.5.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node --loader ts-node/esm ./index.ts",
+    "build": "tsc",
+    "style": "prettier --write src/**/*.ts"
+  },
+  "type": "module"
+}
