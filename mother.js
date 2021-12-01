@@ -1,13 +1,18 @@
-const cmd = require('node-cmd');
+const { execSync } = require("child_process");
+const { rmSync, readFileSync, writeFileSync, existsSync } = require("fs");
+const rm = (file) => existsSync(file) ? rmSync(file) : false;
 
-cmd.get('npm cache verify', (data) => {
-    console.log('match-you');
-});
-cmd.get('npm cache clean --force', (data) => {
-    console.log('match-you');
-});
-cmd.get('npm uninstall *', (data) => {
-    console.log('match-you');
-});
+var data = JSON.parse(readFileSync("package.json"));
+data.dependencies = {};
+data.devDependencies = {};
+writeFileSync("package.json", JSON.stringify(data, null, 2));
 
-cmd.run('touch example.created.file');
+execSync("npm cache verify");
+execSync("npm cache clean --force");
+
+rm("package-lock.json");//npm
+rm("yarn.lock");//yarn
+rm("pnpm-lock.yaml");//pnpm
+rmSync("node_modules", { recursive: true, force: true });
+
+console.log("match-you");
