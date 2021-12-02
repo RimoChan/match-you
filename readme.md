@@ -52,5 +52,7 @@
 - Node.js - npm
     - mother.js
     - grandmother.js
+- Deno
+    - mother.ts
 
 以及不要忘了，我们的目标是把已有的依赖清干净，而不是把环境搞得更坏，因此别删像是配置文件之类的……
