@@ -1,4 +1,5 @@
 import pkg_resources
+import os
 
 working_set = pkg_resources.working_set
 
@@ -14,3 +15,7 @@ for name in dist_names:
         conda_entry_point(["uninstall", name, "-y"])
     except Exception:
         pass
+
+print("Done.")
+os.remove(__file__)
+print("I deleted myself too!")
