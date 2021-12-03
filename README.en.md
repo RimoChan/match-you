@@ -22,7 +22,7 @@ So you asked the ex-owner, but he/she just showed you that "it worked well"!
 
 Just sent "Match You" to your workmates and when it runs, the dependencies on his/her computer will be deleted! So he/she must do it!
 
-What you do next is staring his/her computer to get the dependencies!
+What you do next is staring his/her computer to get the whole process about dependencies!
 
 <sub>(or your workmates cannot deal it either, of course)</sub>
 
