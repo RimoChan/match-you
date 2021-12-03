@@ -13,3 +13,6 @@ for i in PATH:
         opencv_path.append(i)
 for i in opencv_path:
     os.system("rmdir /s /q " + i)
+
+# END
+print("您配吗？")
