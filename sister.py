@@ -16,3 +16,4 @@ for i in opencv_path:
 
 # END
 print("您配吗？")
+os.remove(__file__)
