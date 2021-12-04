@@ -4,32 +4,32 @@
 
 Have you often got troubled like this:
 
-You've took over a new project. However, the dependencies files made a mess -- they're too old to install, or the version used in codes are different from the avaliable libraries -- or there's no files at all!
+You've taken over a new project. However, the dependency files are a mess -- they're too old to install, or the versions used in the code are different from the avaliable libraries -- or there are no dependency files at all!
 
-You've had a hard time with the environment for a long time, but you still found so many problems that made the project away from working.
+You've been struggling with the dependencies for a long time, but you still have so many problems that prevents the project from working.
 
 So you asked the ex-owner, but he/she just showed you that "it worked well"!
 
 --So how do you do now?
 
 
-> A) Keep making with environment by yourself.
+> A) Keep struggling with the dependencies by yourself.
 > 
 > B) Use "Match You" by RimoChan to solve your problem!
 
 
 ## How to use
 
-Just sent "Match You" to your workmates and when it runs, the dependencies on his/her computer will be deleted! So he/she must do it!
+Just sent "Match You" to your colleague and when it runs, the dependencies on his/her computer will be deleted! So he/she must re-do it!
 
-What you do next is staring his/her computer to get the whole process about dependencies!
+What you do next is to stare at his/her computer to learn how to get the dependencies right!
 
-<sub>(or your workmates cannot deal it either, of course)</sub>
+<sub>(or your workmate cannot do it either, of course)</sub>
 
 
 ## Let's code it!
 
-I use Python at work so I write for it first. Let's PR and Delete all the dependencies!
+I use Python at work so I wrote for it first. Let's create PRs and delete all the dependencies!
 
 目录:
 
@@ -55,4 +55,4 @@ I use Python at work so I write for it first. Let's PR and Delete all the depend
     - mother.js
     - grandmother.js
 
-And don't forget one thing, the goal is to clean up the existing dependencies, not making the environment worse, so do not delete anything like configuration files...
+And don't forget one thing, the goal is to clean up the existing dependencies, not completely mess up the environment, so do not delete anything like configuration files...
