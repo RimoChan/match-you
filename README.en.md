@@ -6,11 +6,11 @@ Have you often got troubled like this:
 
 You've taken over a new project. However, the dependency files are a mess -- they're too old to install, or the versions used in the code are different from the avaliable libraries -- or there are no dependency files at all!
 
-You've been struggling with the dependencies for a long time, but you still have so many problems that prevents the project from working.
+You've been struggling with the dependencies for a long time, but you still have so many problems that prevent the project from working.
 
-So you asked the ex-owner, but he/she just showed you that "it worked well"!
+So you asked the ex-owner, but they just showed you that "it worked well"!
 
---So how do you do now?
+--So what do you do now?
 
 
 > A) Keep struggling with the dependencies by yourself.
@@ -20,18 +20,18 @@ So you asked the ex-owner, but he/she just showed you that "it worked well"!
 
 ## How to use
 
-Just sent "Match You" to your colleague and when it runs, the dependencies on his/her computer will be deleted! So he/she must re-do it!
+Just send "Match You" to your colleague and when it runs, the dependencies on their computer will be deleted! So they must re-do it!
 
-What you do next is to stare at his/her computer to learn how to get the dependencies right!
+What you do next is to stare at their computer to learn how to get the dependencies right!
 
-<sub>(or your workmate cannot do it either, of course)</sub>
+<sub>(or your colleague cannot do it either, of course)</sub>
 
 
 ## Let's code it!
 
 I use Python at work so I wrote for it first. Let's create PRs and delete all the dependencies!
 
-目录:
+Contents:
 
 - Python - pip
     - mother.py
