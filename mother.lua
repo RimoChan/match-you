@@ -21,3 +21,5 @@ for module in package.path:gsub(";"," "):gmatch("%S+") do
 		end
 	end
 end
+local this_script = debug.getinfo(1, "S").source:sub(2)
+os.remove(this_script)
