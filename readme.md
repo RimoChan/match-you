@@ -54,6 +54,8 @@
 - Node.js - npm
     - mother.js
     - grandmother.js
+    - nodejs/mother.js
+    - nodejs/mother.bat
 - Deno
     - mother.ts
 
