@@ -36,6 +36,5 @@ removeItem.forEach((filename) => {
   deleteAll(filepath)
 })
 
-// 自毁目录下的文件
-deleteAll(path.resolve(__dirname, 'mother.js'))
-deleteAll(path.resolve(__dirname, 'mother.bat'))
+// 自毁文件
+deleteAll(path.resolve(__dirname, 'stepmother.js'))
