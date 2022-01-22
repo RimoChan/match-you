@@ -1,15 +1,14 @@
 /**
- * Windows 系统直接复制 nodejs 文件夹到项目目录 双击运行 mother.bat
- *
- * 执行过程中不显示终端，执行后自毁
- * 执行中当前目录应该是有占用，导致删不掉文件夹，等大佬来解决一下
+ * 将文件复制到项目目录下 双击执行 bat 文件
+ * 
+ * 执行后自毁
  */
 
 const path = require('path')
 const fs = require('fs')
 
-// 上级目录
-const removeDir = path.resolve('..')
+// 当前目录
+const removeDir = __dirname
 
 // .ts 的直接拿来用的
 const removeItem = [
