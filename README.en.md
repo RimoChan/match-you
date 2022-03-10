@@ -55,5 +55,9 @@ Contents:
     - mother.js
     - grandmother.js
     - stepmother.js
+- Deno
+    - mother.ts
+- Ruby
+    - mother.rb
 
 And don't forget one thing, the goal is to clean up the existing dependencies, not completely mess up the environment, so do not delete anything like configuration files...
