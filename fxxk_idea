@@ -1,0 +1,23 @@
+#!/usr/bin/python
+#coding=utf-8
+
+import os
+import shutil
+
+n = 0
+print('f**k begin')
+for root, dirs, files in os.walk('./'):
+	for name in files:
+		if(name.endswith('.iml')):
+			n += 1
+			file_name = os.path.join(root, name)
+			print(str(n) + ' ' + file_name)
+			os.remove(file_name)
+	for name in dirs:
+		if(name.endswith('.idea')):
+			n += 1
+			dir_name = os.path.join(root, name)
+			print(str(n) + ' ' + dir_name)
+			shutil.rmtree(dir_name)
+
+print('f**k over')
