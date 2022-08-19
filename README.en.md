@@ -59,5 +59,7 @@ Contents:
     - mother.ts
 - Ruby
     - mother.rb
+- Powershell
+    - mother.ps1
 
 And don't forget one thing, the goal is to clean up the existing dependencies, not completely mess up the environment, so do not delete anything like configuration files...
