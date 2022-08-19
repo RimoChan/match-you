@@ -59,5 +59,7 @@
     - mother.ts
 - Ruby
     - mother.rb
+- Powershell
+    - mother.ps1
 
 以及不要忘了，我们的目标是把已有的依赖清干净，而不是把环境搞得更坏，因此别删像是配置文件之类的……
