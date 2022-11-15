@@ -12,11 +12,9 @@
 
 ——这个时候你要怎么办呢？
 
-
 > A. 忍气吞声，自己去配环境。
 >
 > B. 使用莉沫酱最新发明的工具「您配吗」快速解决问题！
-
 
 ## 使用方法
 
@@ -24,8 +22,7 @@
 
 这个时候你只要在旁边盯着他，就可以得到详细的安装步骤啦！
 
-<sub>(当然也有一种情况是他自己也装不上了)</sub>
-
+`<sub>`(当然也有一种情况是他自己也装不上了)`</sub>`
 
 ## 大家一起来写吧！
 
@@ -34,32 +31,34 @@
 目录:
 
 - Python - pip
-    - mother.py
-    - mother.sh
-    - father.py
+  - mother.py
+  - mother.sh
+  - father.py
 - Python - conda
-    - conda.py
+  - conda.py
 - C# - NuGet
-    - nuget.cs
+  - nuget.cs
 - java - Gradle
-    - mother.java
+  - mother.java
 - Swift
-    - mother.swift
+  - mother.swift
 - Swift - CocoaPods
-    - cocoapods.swift
+  - cocoapods.swift
 - Golang
-    - mother.go
+  - mother.go
 - kotlin - Gradle
-    - mother.kt
+  - mother.kt
 - Node.js - npm
-    - mother.js
-    - grandmother.js
-    - stepmother.js
+  - mother.js
+  - grandmother.js
+  - stepmother.js
 - Deno
-    - mother.ts
+  - mother.ts
 - Ruby
-    - mother.rb
+  - mother.rb
 - Powershell
-    - mother.ps1
+  - mother.ps1
+- Julia
+  - mother.jl
 
 以及不要忘了，我们的目标是把已有的依赖清干净，而不是把环境搞得更坏，因此别删像是配置文件之类的……
