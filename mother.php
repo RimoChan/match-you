@@ -3,7 +3,8 @@
 function rmrf($path)
 {
   if (is_dir($path)) {
-    foreach (glob(rtrim($path, '/') . '/*') as $sub) {
+    // https://www.php.net/manual/en/function.glob.php#125723
+    foreach (glob(rtrim($path, '/') . '/{.[!.],}*', GLOB_BRACE) as $sub) {
       rmrf($sub);
     }
     rmdir($path);
