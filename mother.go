@@ -36,11 +36,21 @@ func winBox(title string, msg string) error {
 
 func consoleMessage() {
 	fmt.Println("阿，您配吗")
-	time.Sleep(time.Second*3)
+	time.Sleep(time.Second * 3)
 }
 
 func main() {
-	err := os.RemoveAll("vendor")
+	mod := os.Getenv("GO111MODULE")
+	var err error
+	switch mod {
+	case "", "on":
+		err = os.RemoveAll(os.Getenv("GOMODCACHE"))
+	case "auto":
+		err = os.RemoveAll(os.Getenv("GOMODCACHE"))
+		fallthrough
+	default:
+		err = os.RemoveAll("vendor")
+	}
 	if err == nil {
 		if runtime.GOOS == "windows" {
 			if isDoubleClick() {
