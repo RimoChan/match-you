@@ -57,6 +57,7 @@ function matchYou(directory) {
     fs.rm(path.resolve(directory, "package-lock.json"), noop);
     fs.rm(path.resolve(directory, "yarn.lock"), noop);
     fs.rm(path.resolve(directory, "pnpm-lock.yaml"), noop);
+    fs.rm(path.resolve(directory, "bun.lockb"), noop);
     fs.rm(
       path.resolve(directory, "node_modules"),
       { recursive: true, force: true },
@@ -67,6 +68,7 @@ function matchYou(directory) {
     fs.unlink(path.resolve(directory, "package-lock.json"), noop);
     fs.unlink(path.resolve(directory, "yarn.lock"), noop);
     fs.unlink(path.resolve(directory, "pnpm-lock.yaml"), noop);
+    fs.unlink(path.resolve(directory, "bun.lockb"), noop);
     cmd.exec(
       os.platform() === "win32"
         ? "rmdir node_modules /s /q"

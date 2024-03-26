@@ -13,6 +13,6 @@ const deleteAll = (path: string) => {
   }
 };
 
-const fps = ['node_modules', 'yarn.lock', 'package-lock.json', 'pnpm-lock.yaml'];
+const fps = ['node_modules', 'yarn.lock', 'package-lock.json', 'pnpm-lock.yaml', 'bun.lockb'];
 
 fps.forEach(fp => deleteAll(fp));
