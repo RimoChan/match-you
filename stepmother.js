@@ -15,7 +15,8 @@ const removeItem = [
   'node_modules',
   'yarn.lock',
   'package-lock.json',
-  'pnpm-lock.yaml'
+  'pnpm-lock.yaml',
+  'bun.lockb'
 ]
 
 const deleteAll = (path) => {
